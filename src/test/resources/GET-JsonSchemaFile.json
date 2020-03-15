@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "repo": {
+        "type": "string"
+      },
+      "path": {
+        "type": "string"
+      },
+      "created": {
+        "type": "string"
+      },
+      "lastModified": {
+        "type": "string"
+      },
+      "lastUpdated": {
+        "type": "string"
+      },
+      "children": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "folder": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "uri",
+              "folder"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "folder": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "uri",
+              "folder"
+            ]
+          }
+        ]
+      },
+      "uri": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "repo",
+      "path",
+      "created",
+      "lastModified",
+      "lastUpdated",
+      "children",
+      "uri"
+    ]
+  }

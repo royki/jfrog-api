@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestA" parallel="false">
+
+	<test name="A">
+		<classes>
+			<class name="com.jfrog.rest.apis.testcases.GETandSearchTestCases" />
+		</classes>
+	</test>
+
+</suite>
